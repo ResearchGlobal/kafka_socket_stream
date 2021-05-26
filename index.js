@@ -26,10 +26,12 @@ $(document).ready(function(){
     data,
     options: {animation : false}
   });
-  
+
   function webSocketInvoke() {
     var socket = io('http://localhost:3000');
     socket.on('event', (value) => {
+      console.log(io);
+      console.log(`socket value`,value)
       updateData(value);
       chart.update();
     });

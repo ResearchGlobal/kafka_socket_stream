@@ -23,7 +23,7 @@ io.on('connection', client => {
     console.log(message);
     client.emit('event', message.value);
   });
-  client.on('disconnect', () => { 
+  client.on('disconnect', () => {
     console.log('Client disconnected');
    });
 });

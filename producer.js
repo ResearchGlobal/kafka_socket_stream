@@ -33,7 +33,7 @@ producer.on('ready', () => {
   }
   waitForUserInput();
 });
- 
+
 producer.on('error', (err) => {
   console.log(err);
 });
